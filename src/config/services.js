@@ -10,6 +10,7 @@ export default {
       indonesia: {
         summary: 'https://api.kawalcorona.com/indonesia',
         summary2: 'https://api.kawalcovid19.id/v1/api/case/summary',
+        summary3: 'https://covid19.mathdro.id/api/countries/indonesia',
         province: 'https://api.datacovid19.id/province/indonesia',
         daily: 'api.u9.nu/covid19',
       }

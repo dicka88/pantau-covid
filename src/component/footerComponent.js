@@ -11,8 +11,7 @@ class FooterComponent extends HTMLElement {
     this.innerHTML = `
       <div style="display: flex; border-top: 1px solid #999999; padding: 2em 0 6em 0;" class="">
         <div class="" style="flex: 1;">
-          <span>Aplikasi submission dicoding</span>
-          <span>dibuat dengan ❤ dan ☕</span>
+          <span>Build with ❤ dan ☕</span>
         </div>
         <div class="" style="flex: 1; flex-direction: row; display: flex; justify-content: center;">
           <style media="screen">

@@ -6,6 +6,8 @@ import { faFacebookF, faInstagram, faGithub } from '@fortawesome/free-brands-svg
 library.add(faFacebookF, faInstagram, faGithub)
 dom.watch()
 
+import API from '../config/services.js'
+
 class HomeContainer extends HTMLElement {
   connectedCallback() {
     this.render()
@@ -13,14 +15,15 @@ class HomeContainer extends HTMLElement {
   }
   async handleApi() {
     try {
-      const req = await fetch('https://api.kawalcovid19.id/v1/api/case/summary')
-      const { confirmed, activeCare, recovered, deceased, metadata } = await req.json()
+      const req = await fetch(API.endpoint.covid.indonesia.summary3)
+      const { confirmed, recovered, deaths, lastUpdate } = await req.json()
+      const activeCare = Number(confirmed.value) - Number(recovered.value) - Number(deaths.value)
 
-      this.querySelector('#confirm').textContent = confirmed
+      this.querySelector('#confirm').textContent = confirmed.value
       this.querySelector('#recover').textContent = activeCare
-      this.querySelector('#recovered').textContent = recovered
-      this.querySelector('#death').textContent = deceased
-      this.querySelector('#lastUpdate').textContent = _date(metadata.lastUpdatedAt)
+      this.querySelector('#recovered').textContent = recovered.value
+      this.querySelector('#death').textContent = deaths.value
+      this.querySelector('#lastUpdate').textContent = _date(lastUpdate)
     } catch(e) {
       alert("Tolong cek koneksi anda")
     }
