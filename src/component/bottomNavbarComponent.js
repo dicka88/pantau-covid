@@ -11,7 +11,7 @@ class BottomNavbar extends HTMLElement {
       const url = location.hash
       const link = e.getAttribute('href')
       if(url == link) e.classList.add('active')
-      if(url == '') this.querySelector('.wraper-item').classList.add('active')
+      if(url == '') this.querySelector('.wrapper-item').classList.add('active')
 
       e.addEventListener('click', () => {
         const active =  this.querySelector('.wrapper-item.active')
