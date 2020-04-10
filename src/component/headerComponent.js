@@ -28,6 +28,7 @@ class HeaderComponent extends HTMLElement {
     const switchDark = this.querySelector('#switch')
     switchDark.addEventListener('click', () => {
       localStorage.setItem('theme', this.storageTheme() == 'dark' ? 'light' : 'dark')
+      metaThemeColor.setAttribute('content', this.storageTheme() == 'dark' ? '#1A1616' : '#fff')
       document.body.classList.toggle('dark')
     })
   }
