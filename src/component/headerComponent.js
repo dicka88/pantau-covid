@@ -17,8 +17,12 @@ class HeaderComponent extends HTMLElement {
     return theme
   }
   switchColor() {
+    const metaThemeColor = document.head.querySelector('meta[name=theme-color]')
     if(this.storageTheme() == 'dark') {
       document.body.classList.toggle('dark')
+      metaThemeColor.setAttribute('content', '#1A1616')
+    } else {
+      metaThemeColor.setAttribute('content', '#fff')
     }
 
     const switchDark = this.querySelector('#switch')
