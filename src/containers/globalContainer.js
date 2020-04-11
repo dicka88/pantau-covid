@@ -12,7 +12,7 @@ class GlobalContainer extends HTMLElement {
       <div>
         <label>Cari negara</label>
         <select-component></select-component>
-        <img style="width: 100%;" src=${API.endpoint.covid.global.image} />
+        <img style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src=${API.endpoint.covid.global.image} />
       </div>
     `
   }
