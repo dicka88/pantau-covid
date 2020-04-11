@@ -7,11 +7,13 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "regenerator-runtime": "^0.13.5"
+    "regenerator-runtime": "^0.13.5",
+    "workbox-webpack-plugin": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "app-manifest-webpack-plugin": "^1.2.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "file-loader": "^6.0.0",

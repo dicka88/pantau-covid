@@ -58,7 +58,7 @@ class HomeContainer extends HTMLElement {
         <div class="">
           <h1 style="font-size: 2.5rem; line-height: 48px; margin-bottom: 0; max-width: 800px;">Informasi Tentang Covid-19 Terkini Lawan Covid Jangan Panik</h1>
           <p style="max-width: 700px; font-size: 22px;">
-            Situs ini merupakan situs untuk memantau penyebaran <b>virus corona</b> tertutama di <b>indonesia</b>, situs ini dibuat secara sukarelawan oleh tim pengembang kami.
+            Situs ini merupakan situs untuk memantau penyebaran <b>virus corona</b> terutama di <b>indonesia</b>, situs ini dibuat secara sukarelawan oleh tim pengembang kami.
           </p>
         </div>
         <img src="${hero}" class="mobile-330 hero-image" style="width: 450px; height: auto; position: absolute; right: 4em; top: 0; right: -1em; transform: scaleX(-1); z-index: -1;" alt="">

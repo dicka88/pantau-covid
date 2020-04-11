@@ -16,3 +16,14 @@ import './containers/globalContainer.js'
 import './containers/errorContainer.js'
 
 import './config/route.js'
+
+if('serviceWorker' in navigator) {
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('./sw.js')
+      console.log('Sw success registered', reg);
+    } catch(e) {
+      console.error('sw failed')
+    }
+  })
+}
