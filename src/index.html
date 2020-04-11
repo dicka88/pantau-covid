@@ -74,6 +74,12 @@
       bottom-navbar {
         display: none;
       }
+      .sticky-top {
+        position: sticky;
+        top: 0;
+        transition: 0.5s;
+        z-index: 2;
+      }
       @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         .wrapper {
@@ -92,8 +98,8 @@
     </style>
   </head>
   <body>
-    <header class="bg-header" style="position: sticky; top: 0; transition: 0.5s; z-index: 2;">
-      <header-component class="wrapper" style="display: flex; flex-direction: row; height: 96px; align-items: center; justify-content: space-between;" />
+    <header class="bg-header sticky-top">
+      <header-component />
     </header>
     <main class="wrapper">
 

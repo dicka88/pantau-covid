@@ -8,7 +8,7 @@ const date = (string = null) => {
   const date = x.getDate() < 10 ? '0' + x.getDate() : x.getDate()
   const month = constant.month[x.getMonth()]
   const year = x.getFullYear()
-  const hour = x.getHours()
+  const hour = x.getHours() < 10 ? '0' + x.getHours() : x.getHours()
   const minutes = x.getMinutes() < 10 ? '0' + x.getMinutes() : x.getMinutes()
   const second = x.getSeconds() < 10 ? '0' + x.getSeconds() : x.getSeconds()
 

@@ -50,6 +50,7 @@ class BottomNavbar extends HTMLElement {
         }
         .wrapper-item > span {
           font-size: 15px;
+          margin-top: 0.5em;
         }
         .row {
           display: flex;
@@ -72,11 +73,11 @@ class BottomNavbar extends HTMLElement {
           <span>Informasi</span>
         </a>
         <a href="#/faq" class="wrapper-item">
-          <i class="fas fa-home" style="font-size: 25px;"></i>
+          <i class="fas fa-question-circle" style="font-size: 25px;"></i>
           <span>FAQ</span>
         </a>
         <a href="#/wilayah" class="wrapper-item">
-          <i class="fas fa-home" style="font-size: 25px;"></i>
+          <i class="fas fa-map-marked-alt" style="font-size: 25px;"></i>
           <span>Wilayah</span>
         </a>
         <a href="#/global" class="wrapper-item">

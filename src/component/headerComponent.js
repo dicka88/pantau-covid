@@ -34,8 +34,8 @@ class HeaderComponent extends HTMLElement {
   }
   handleScroll() {
     window.addEventListener('scroll',() => {
-      const headerClass = this.classList
-      if(window.scrollY > 100) {
+      const headerClass = this.querySelector('div').classList
+      if(window.scrollY > 60) {
         headerClass.add('bottom-shadow')
       } else {
         headerClass.remove('bottom-shadow')
@@ -60,31 +60,32 @@ class HeaderComponent extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-      <div style="display: flex; justify-content: flex-start;">
-        <a href="#/">
-          <img src="${logo}" style="width: 9em; height: 3em;" alt="icon covid">
-        </a>
-        <div class="nav-wrapper" style="flex: 1; margin-left: 2em;">
-          <nav>
-            <a class="" href="#/" >Beranda</a>
-            <a class="" href="#/faq">FAQ</a>
-            <a class="" href="#/informasi">Informasi</a>
-            <a class="" href="#/hotline">Hotline</a>
-            <a class="" href="#/wilayah">Wilayah</a>
-            <a class="" href="#/global">Global</a>
-          </nav>
+      <div class="wrapper" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+        <div style="display: flex; justify-content: flex-start;">
+          <a href="#/">
+            <img src="${logo}" style="width: 9em; height: 3em;" alt="icon covid">
+          </a>
+          <div class="nav-wrapper" style="flex: 1; margin-left: 2em;">
+            <nav>
+              <a class="" href="#/" >Beranda</a>
+              <a class="" href="#/faq">FAQ</a>
+              <a class="" href="#/informasi">Informasi</a>
+              <a class="" href="#/hotline">Hotline</a>
+              <a class="" href="#/wilayah">Wilayah</a>
+              <a class="" href="#/global">Global</a>
+            </nav>
+          </div>
         </div>
-      </div>
-      <div style="display: flex; flex-direction: row; align-items: center;" class="">
-        <span>Mode warna</span>
-        <button id="switch" style="display: flex; flex-direction: row; outline: none; cursor: pointer; color: white; background-color: transparent; border: none;" type="button">
-          <div style="border-radius: 16px 0 0 16px; padding: 8px; background-color: black;" class="">
-            <span>Gelap</span>
-          </div>
-          <div style="border-radius: 0 16px 16px 0; padding: 8px; background-color: #d8232a;" class="">
-            <span>Terang</span>
-          </div>
-        </button>
+        <div style="display: flex; flex-direction: row; align-items: center;" class="">
+          <button id="switch" style="display: flex; flex-direction: row; outline: none; cursor: pointer; color: white; background-color: transparent; border: none;" type="button">
+            <div style="border-radius: 16px 0 0 16px; padding: 8px; background-color: black;" class="">
+              <span>Gelap</span>
+            </div>
+            <div style="border-radius: 0 16px 16px 0; padding: 8px; background-color: #d8232a;" class="">
+              <span>Terang</span>
+            </div>
+          </button>
+        </div>
       </div>
     `
   }

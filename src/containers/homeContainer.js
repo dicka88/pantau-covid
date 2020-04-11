@@ -30,34 +30,42 @@ class HomeContainer extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-      <section>
+      <style media="screen">
+        .box-info {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding: 2em;
+          border-radius: 8px;
+          align-items: center;
+          justify-content: center;
+          background-color: #2e343b;
+          margin-bottom: 1em;
+        }
+        .dark .hero-image {
+           opacity: 0.5;
+        }
+        @media only screen and (max-width: 768px) {
+          .box-info {
+            width: 100%;
+          }
+          .mobile-330 {
+            width: 330px !important;
+          }
+        }
+      </style>
+      <section style="position: relative;">
         <div class="">
-          <h1 style="font-size: 44px; line-height: 48px; margin-bottom: 0; max-width: 800px;">Informasi Tentang Covid-19 Terkini Lawan Covid Jangan Panik</h1>
-          <p style="max-width: 700px; font-size: 22px;">Situs ini merupakan sumber informasi inisiatif sukarela warganet Indonesia pro-data, terdiri dari praktisi kesehatan, akademisi & profesional.</p>
+          <h1 style="font-size: 2.5rem; line-height: 48px; margin-bottom: 0; max-width: 800px;">Informasi Tentang Covid-19 Terkini Lawan Covid Jangan Panik</h1>
+          <p style="max-width: 700px; font-size: 22px;">
+            Situs ini merupakan situs untuk memantau penyebaran <b>virus corona</b> tertutama di <b>indonesia</b>, situs ini dibuat secara sukarelawan oleh tim pengembang kami.
+          </p>
         </div>
-        <img src="${hero}" style="width: 450px; height: auto; position: absolute; right: 4em; top: 100px; transform: scaleX(-1); z-index: -1;" alt="">
+        <img src="${hero}" class="mobile-330 hero-image" style="width: 450px; height: auto; position: absolute; right: 4em; top: 0; right: -1em; transform: scaleX(-1); z-index: -1;" alt="">
       </section>
       <section style="margin-top: 4em;">
         <h1>Jumlah kasus di indonesia saat ini</h1>
         <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; color: white;">
-          <style media="screen">
-            .box-info {
-              display: flex;
-              flex-direction: column;
-              text-align: center;
-              padding: 2em;
-              border-radius: 8px;
-              align-items: center;
-              justify-content: center;
-              background-color: #2e343b;
-              margin-bottom: 1em;
-            }
-            @media only screen and (max-width: 768px) {
-              .box-info {
-                width: 100%;
-              }
-            }
-          </style>
           <div class="box-info">
             <span id="confirm" style="color: yellow; font-size: 76px;">- - - -</span>
             <span>Terkonfirmasi</span>

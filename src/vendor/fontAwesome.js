@@ -3,13 +3,17 @@ import {
   faHome,
   faGlobe,
   faInfoCircle,
-  faPhone
+  faPhone,
+  faQuestionCircle,
+  faMapMarkedAlt
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faHome,
   faGlobe,
   faInfoCircle,
-  faPhone
+  faPhone,
+  faQuestionCircle,
+  faMapMarkedAlt
 )
 dom.watch()
