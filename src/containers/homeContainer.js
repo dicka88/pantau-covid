@@ -41,6 +41,7 @@ class HomeContainer extends HTMLElement {
           justify-content: center;
           background-color: #2e343b;
           margin-bottom: 1em;
+          width: 180px;
         }
         .dark .hero-image {
            opacity: 0.5;
@@ -56,7 +57,8 @@ class HomeContainer extends HTMLElement {
       </style>
       <section style="position: relative;">
         <div class="">
-          <h1 style="font-size: 2.5rem; line-height: 48px; margin-bottom: 0; max-width: 800px;">Informasi Tentang Covid-19 Terkini Lawan Covid Jangan Panik</h1>
+          <h1 style="font-size: 2.5rem; line-height: 48px; margin-bottom: 0; max-width: 800px;">Informasi Tentang Covid-19 Terkini</h1>
+          <h1 style="font-size: 2rem; line-height: 48px; margin-bottom: 0; margin-top: 0; max-width: 800px;">Lawan Covid Jangan Panik</h1>
           <p style="max-width: 700px; font-size: 22px;">
             Situs ini merupakan situs untuk memantau penyebaran <b>virus corona</b> terutama di <b>indonesia</b>, situs ini dibuat secara sukarelawan oleh tim pengembang kami.
           </p>
@@ -89,24 +91,27 @@ class HomeContainer extends HTMLElement {
         </div>
       </section>
       <section>
-        <div class="" style="margin-top: 3em;">
+        <div style="margin-top: 2em;">
+          <h1>Terdapat indikasi gejala virus covid-19 ?</h1>
+          <p>Cepat segera laporkan jika anggota keluarga maupun tetangga terindikasi gejala-gejala yang mirip dengan gejala virus corona, segera isolasi diri di rumah dan segera hubungi nomor hotline berikut <a href="#/hotline">klik disini</a>.</p>
+        </div>
+      </section>
+      <section>
+        <div style="margin-top: 3em;">
           <h1>Bacaan terkini</h1>
-          <div style="
-            display: flex;
-            flex-wrap: wrap;
-          ">
+          <div style="display: flex; flex-wrap: wrap;">
             <article style="display: flex; flex-direction: column; background-color: #2e343b; border-radius: 7px; padding: 1em;">
-              <a style="text-decoration: none; color: white;" href="#">
+              <a target="_blank" style="text-decoration: none; color: white;" href="#">
                 <header>
-                  <h2>Cerita dari swedia asada ad kadak ad</h2>
+                  <h2>Virus Corona (COVID-19) - Gejala, penyebab dan mengobati ...</h2>
                 </header>
                 <section>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Apabila Anda ingin mendapatkan lebih banyak informasi tentang gejala, pencegahan, dan fakta tentang virus Corona, silakan download aplikasi ...</p>
                 </section>
                 <footer>
                   <div class="" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 15px;">
                     <div class="" style="display: flex; flex-direction: row; align-items: center;">
-                      <img style="border-radius: 50%; border: 1px solid white; width: 25px;" src="https://kawalcovid19.id/android-chrome-192x192.png" alt="">
+                      <img style="border-radius: 50%; border: 1px solid white; width: 25px; background-color: white;" src="favicon.png" alt="">
                       <span style="margin-left: 12px;">Info covid-19</span>
                     </div>
                     <span>03 Maret 2020</span>
@@ -115,6 +120,9 @@ class HomeContainer extends HTMLElement {
               </a>
             </article>
           </div>
+        </div>
+        <div style="margin-top: 1em; text-align: center;">
+          <a href="#/informasi" style="text-decoration: none;">Lebih banyak ...</a>
         </div>
       </section>
     `

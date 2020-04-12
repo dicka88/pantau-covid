@@ -18,6 +18,7 @@ const initRoute = () => {
 }
 window.addEventListener('hashchange', (e) => {
   initRoute()
+  window.scrollTo(0, 0)
 })
 
 initRoute()

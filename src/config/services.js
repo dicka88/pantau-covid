@@ -5,7 +5,9 @@ export default {
         positive: 'https://api.kawalcorona.com/positif',
         recover: 'https://api.kawalcorona.com/sembuh',
         death: 'https://api.kawalcorona.com/meninggal',
-        image: 'https://covid19.mathdro.id/api/og'
+        countries: 'https://covid19.mathdro.id/api/countries',
+        image: 'https://covid19.mathdro.id/api/og',
+        imagePattern: 'https://covid19.mathdro.id/api/countries/[country]/og'
       },
       indonesia: {
         summary: 'https://api.kawalcorona.com/indonesia',

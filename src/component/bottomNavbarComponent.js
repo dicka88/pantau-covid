@@ -35,7 +35,7 @@ class BottomNavbar extends HTMLElement {
           align-items: center;
         }
         .dark .navbar.bottom {
-          border-top: 1px solid #e8e8e8;
+          border-top: 1px solid #333131;
           background-color: #1A1616;
         }
         .wrapper-item {

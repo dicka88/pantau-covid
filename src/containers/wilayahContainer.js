@@ -70,6 +70,11 @@ class WilayahContainer extends HTMLElement {
         .box-shadow {
           box-shadow: 0 0.5em 2em -0.125em rgba(148, 146, 146, 0.52), 0 0 0 1px rgba(10,10,10,.02);
         }
+        @media only screen and (max-width: 768px) {
+          .table {
+            font-size: 10px;
+          }
+        }
       </style>
       <div>
         <div>

@@ -26,6 +26,7 @@ class SelectComponent extends HTMLElement {
     })
   }
   handleItemListener() {
+    const vm = this
     const option = this.querySelectorAll('.custom-option')
     const trigger = this.querySelector('.custom-select-trigger')
     option.forEach(e => {
@@ -33,21 +34,23 @@ class SelectComponent extends HTMLElement {
       	e.parentNode.querySelector('.custom-option.selected').classList.remove('selected')
         e.classList.add('selected')
         trigger.querySelector('span').textContent = e.getAttribute('data-value')
-        trigger.querySelector('span').setAttribue('data-value', e.getAttribute('data-value'))
-        this.onChange()
+        trigger.querySelector('span').setAttribute('data-value', e.getAttribute('data-value'))
+        vm.onChange()
       })
     })
   }
   onChange() {
-    // your code here
+    // your props code here
   }
   set item(data) {
     // example, [{value: 'adad', name: 'adad'}]
     const options = this.querySelector('.custom-select-options')
     data.forEach(e => {
-      options.appendHTML(`
-        <span data-value="${e.value}" class="custom-option">${e.name}</span>
-      `)
+      const span = document.createElement('span')
+      span.textContent = e.name
+      span.setAttribute('data-value', e.value)
+      span.classList.add('custom-option')
+      options.appendChild(span)
     })
     this.handleItemListener()
   }
@@ -91,6 +94,8 @@ class SelectComponent extends HTMLElement {
           border-color: #394a6d;
           transition: 0.5s;
           background-color: white;
+          overflow: auto;
+          max-height: 200px;
         }
         .custom-select.open .custom-select-options {
           opacity: 1;
@@ -148,13 +153,11 @@ class SelectComponent extends HTMLElement {
       <div class="custom-select-wrapper">
         <div class="custom-select">
           <div class="custom-select-trigger">
-            <span data-value="">Placeholder</span>
+            <span data-value="global">Semua</span>
             <div class="arrow"></div>
           </div>
           <div class="custom-select-options">
-            <span data-value="satu" class="custom-option selected">satu</span>
-            <span data-value="dua" class="custom-option">dua</span>
-            <span data-value="tiga" class="custom-option">tiga</span>
+            <span data-value="Semua" class="custom-option selected">Semua</span>
           </div>
         </div>
       </div>
