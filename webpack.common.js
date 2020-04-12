@@ -56,7 +56,7 @@ module.exports = {
 		}),
 		new AppManifestWebpackPlugin({
 	    logo: './src/images/favicon.png',
-	    persistentCache: true,
+	    persistentCache: false,
 	    inject: true,
 	    config: {
 	      appName: 'Pantau Covid19',
