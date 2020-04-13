@@ -2,7 +2,7 @@ const constant = {
   day: ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'],
   month: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 }
-// todo add params preg match or format Dmy His
+
 const date = (string = null) => {
   const x = new Date(string)
   const date = x.getDate() < 10 ? '0' + x.getDate() : x.getDate()

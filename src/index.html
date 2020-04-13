@@ -8,106 +8,16 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./images/favicon.png">
     <title>Pantau Covid-19</title>
-    <style media="screen">
-      body {
-        font-family: "IBM Plex Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        transition: 0.5s;
-        padding: 0;
-        margin: 0;
-      }
-      header {
-        display: block;
-      }
-      .wrapper {
-        padding: 1em 8em;
-      }
-      .bottom-shadow {
-        box-shadow: 0 0 1px 0;
-      }
-      .dark {
-        background-color: #1A1616;
-        color: #CBCBCB;
-      }
-      .dark .box-info {
-        background-color: #2D2D2D;
-      }
-      .dark .bg-header {
-        background-color: #1A1616;
-      }
-      .dark a {
-        color: #CBCBCB;
-      }
-      .dark .link {
-        color: white;
-      }
-      .bg-header {
-        background-color: white;
-      }
-      nav a {
-        display: inline-block;
-        padding: 15px;
-        color: #535353;
-        text-decoration: none;
-        position: relative;
-        transition: 0.4s;
-      }
-      nav a:hover::before {
-        display: block;
-        height: 2px;
-        background-color: #d8232a;
-        bottom: 0;
-        position: absolute;
-        content: '';
-        width: calc(100% - 30px);
-      }
-      .active {
-        font-weight: bold;
-      }
-      nav .active::before {
-        display: block;
-        height: 2px;
-        background-color: #d8232a;
-        bottom: 0;
-        position: absolute;
-        content: '';
-        width: calc(100% - 30px);
-      }
-      bottom-navbar {
-        display: none;
-      }
-      .sticky-top {
-        position: sticky;
-        top: 0;
-        transition: 0.5s;
-        z-index: 2;
-      }
-      @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        .wrapper {
-          padding: 1em;
-        }
-        .nav-wrapper {
-          display: none;
-        }
-        bottom-navbar {
-          display: block;
-        }
-        header-component {
-          height: 3em !important;
-        }
-      }
-    </style>
   </head>
   <body>
     <header class="bg-header sticky-top">
       <header-component />
     </header>
     <main class="wrapper">
-
     </main>
     <footer class="wrapper">
       <footer-component />
     </footer>
-    <bottom-navbar style="position: fixed; bottom: 0; width: 100%;" />
+    <bottom-navbar class="bottom-navbar" />
   </body>
 </html>

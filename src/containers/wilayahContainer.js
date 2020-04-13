@@ -16,7 +16,7 @@ class WilayahContainer extends HTMLElement {
       const result = await region.json()
       this.renderTable(result.data)
     } catch(e) {
-      alert('check your connection')
+      console.log('You may offline')
     }
   }
   renderTable(data = []) {
@@ -39,13 +39,11 @@ class WilayahContainer extends HTMLElement {
           display:table;
           width: 100%;
         }
-        .dark .thead {
-          color: black;
-        }
         .thead {
           display: table-header-group;
           background-color: #e8e8e8;
           font-weight: bold;
+          color: black;
         }
         .thead > div {
           display: table-cell;

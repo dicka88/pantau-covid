@@ -27,7 +27,7 @@ class FooterComponent extends HTMLElement {
           <a href="https://github.com/dicka88" target="_blank" class="link"><i class="fab fa-github"></i></a>
         </div>
         <div class="" style="flex: 1; display: flex; justify-content: flex-end">
-          <span>Ketahui lebih lanjut</span>
+          <span><a target="_blank" href="https://linkedin.com/in/dickaismaji">Developers</a></span>
         </div>
       </div>
     `

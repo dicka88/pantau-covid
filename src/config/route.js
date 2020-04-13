@@ -16,6 +16,7 @@ const initRoute = () => {
   const hash = location.hash.substr(1)
   main.innerHTML = (routes[hash]) ? `<${routes[hash]} />` : `<${routes['/error']} />`
 }
+
 window.addEventListener('hashchange', (e) => {
   initRoute()
   window.scrollTo(0, 0)

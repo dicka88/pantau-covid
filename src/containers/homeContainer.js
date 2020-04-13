@@ -25,12 +25,29 @@ class HomeContainer extends HTMLElement {
       this.querySelector('#death').textContent = deaths.value
       this.querySelector('#lastUpdate').textContent = _date(lastUpdate)
     } catch(e) {
-      alert("Tolong cek koneksi anda")
+      console.log("You may offline");
     }
   }
   render() {
     this.innerHTML = `
       <style media="screen">
+        .main .title {
+          font-size: 2.5rem;
+          line-height: 48px;
+          margin-bottom: 0;
+          max-width: 800px;
+        }
+        .main .sub-title {
+          font-size: 2rem;
+          line-height: 48px;
+          margin-bottom: 0;
+          margin-top: 0;
+          max-width: 800px;
+        }
+        .main .paragraph {
+          max-width: 700px;
+          font-size: 22px;
+        }
         .box-info {
           display: flex;
           flex-direction: column;
@@ -43,8 +60,40 @@ class HomeContainer extends HTMLElement {
           margin-bottom: 1em;
           width: 180px;
         }
+        .hero-image {
+          width: 450px;
+          height: auto;
+          position: absolute;
+          right: 4em;
+          top: 0;
+          right: -1em;
+          transform: scaleX(-1);
+          z-index: -1;
+        }
+        .mt-1 {
+          margin-top: 1em;
+        }
+        .mt-2 {
+          margin-top: 2em;
+        }
+        .mt-3 {
+          margin-top: 3em;
+        }
+        .mt-4 {
+          margin-top: 4em;
+        }
+        .text-center {
+          text-align: center;
+        }
+        .flex-wrap {
+          display: flex;
+          flex-wrap: wrap;
+        }
         .dark .hero-image {
            opacity: 0.5;
+        }
+        article-card-component {
+          width: 49.2%;
         }
         @media only screen and (max-width: 768px) {
           .box-info {
@@ -53,19 +102,22 @@ class HomeContainer extends HTMLElement {
           .mobile-330 {
             width: 330px !important;
           }
+          article-card-component {
+            width: 100%;
+          }
         }
       </style>
       <section style="position: relative;">
-        <div class="">
-          <h1 style="font-size: 2.5rem; line-height: 48px; margin-bottom: 0; max-width: 800px;">Informasi Tentang Covid-19 Terkini</h1>
-          <h1 style="font-size: 2rem; line-height: 48px; margin-bottom: 0; margin-top: 0; max-width: 800px;">Lawan Covid Jangan Panik</h1>
-          <p style="max-width: 700px; font-size: 22px;">
+        <div class="main">
+          <h1 class="title">Informasi Tentang Covid-19 Terkini</h1>
+          <h1 class="sub-title">Lawan Covid Jangan Panik</h1>
+          <p class="paragraph">
             Situs ini merupakan situs untuk memantau penyebaran <b>virus corona</b> terutama di <b>indonesia</b>, situs ini dibuat secara sukarelawan oleh tim pengembang kami.
           </p>
         </div>
-        <img src="${hero}" class="mobile-330 hero-image" style="width: 450px; height: auto; position: absolute; right: 4em; top: 0; right: -1em; transform: scaleX(-1); z-index: -1;" alt="">
+        <img src="${hero}" class="mobile-330 hero-image" alt="hero">
       </section>
-      <section style="margin-top: 4em;">
+      <section class="mt-4">
         <h1>Jumlah kasus di indonesia saat ini</h1>
         <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; color: white;">
           <div class="box-info">
@@ -91,37 +143,19 @@ class HomeContainer extends HTMLElement {
         </div>
       </section>
       <section>
-        <div style="margin-top: 2em;">
+        <div class="mt-2">
           <h1>Terdapat indikasi gejala virus covid-19 ?</h1>
           <p>Cepat segera laporkan jika anggota keluarga maupun tetangga terindikasi gejala-gejala yang mirip dengan gejala virus corona, segera isolasi diri di rumah dan segera hubungi nomor hotline berikut <a href="#/hotline">klik disini</a>.</p>
         </div>
       </section>
       <section>
-        <div style="margin-top: 3em;">
+        <div class="mt-3">
           <h1>Bacaan terkini</h1>
-          <div style="display: flex; flex-wrap: wrap;">
-            <article style="display: flex; flex-direction: column; background-color: #2e343b; border-radius: 7px; padding: 1em;">
-              <a target="_blank" style="text-decoration: none; color: white;" href="#">
-                <header>
-                  <h2>Virus Corona (COVID-19) - Gejala, penyebab dan mengobati ...</h2>
-                </header>
-                <section>
-                  <p>Apabila Anda ingin mendapatkan lebih banyak informasi tentang gejala, pencegahan, dan fakta tentang virus Corona, silakan download aplikasi ...</p>
-                </section>
-                <footer>
-                  <div class="" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 15px;">
-                    <div class="" style="display: flex; flex-direction: row; align-items: center;">
-                      <img style="border-radius: 50%; border: 1px solid white; width: 25px; background-color: white;" src="favicon.png" alt="">
-                      <span style="margin-left: 12px;">Info covid-19</span>
-                    </div>
-                    <span>03 Maret 2020</span>
-                  </div>
-                </footer>
-              </a>
-            </article>
+          <div class="flex-wrap">
+            <article-card-component></article-card-component>
           </div>
         </div>
-        <div style="margin-top: 1em; text-align: center;">
+        <div class="mt-1 text-center">
           <a href="#/informasi" style="text-decoration: none;">Lebih banyak ...</a>
         </div>
       </section>

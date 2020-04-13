@@ -12,8 +12,11 @@ class FAQContainer extends HTMLElement {
         a {
           text-decoration: underline;
         }
+        .word {
+          word-break: break-word;
+        }
       </style>
-      <div style="word-break: break-word;">
+      <div class="word">
         <h1 style="font-size: 40px">Pertanyaan seputar Covid-19</h1>
         ${content.content.rendered}
       </div>
