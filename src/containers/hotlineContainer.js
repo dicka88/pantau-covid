@@ -81,6 +81,11 @@ class HotlineContainer extends HTMLElement {
         .center {
           text-align: center;
         }
+        @media only screen and (max-width: 768px) {
+          .m-is-12 {
+            width: 100% !important;
+          }
+        }
       </style>
       <div class="container">
         <h1 class="center">Hotline penanganan kasus Covid-19</h1>
@@ -88,7 +93,7 @@ class HotlineContainer extends HTMLElement {
           ${
             hotline.map(item => {
               return `
-              <div class="is-4">
+              <div class="is-4 m-is-12">
                 <div class="card" style="display: flex; flex-direction: row;" style="padding: 1em;">
                   <div style="padding: 1.67em;">
                     <i class="fas fa-phone" style="color: #3273dc;"></i>
