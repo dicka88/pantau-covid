@@ -65,7 +65,7 @@ module.exports = {
 	      developerURL: 'https://github.com/dicka88',
 	      background: '#fff',
 	      theme_color: '#fff',
-	      display: 'minimal-ui',
+	      display: 'standalone',
 	      orientation: 'portrait',
 	      start_url: '/index.html',
 	      version: '1.0',
