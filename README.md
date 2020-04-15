@@ -3,7 +3,7 @@
 Terkait dengan bencana alam wabah pandemik Covid-19 dan maraknya API yang bertebaran di internet untuk para developers, maka diputuskan kami untuk membuat web latihan untuk memantau penebaran covid-19.
 
 ## DEMO
-See [DEMO][https://pantaucovid.netlify.com] , we using netlify to serve static site
+See [DEMO](https://pantaucovid.netlify.com) , we using netlify to serve static site
 
 ## Build
 You will need Node.js installed on your system.
@@ -54,7 +54,7 @@ you can set manually that port
 ```
 
 ## Thanks to
-1. [Dicoding][https://dicoding.com], for exercise frontend web component class
-2. [Netlify][https://netlify.com], Static site server
-3. [Mathdroid][https://covid19.mathdro.id], covid api
-4. [Fontawesome][https://fontawesome.com], free icon
+1. [Dicoding](https://dicoding.com), for exercise frontend web component class
+2. [Netlify](https://netlify.com), Static site server
+3. [Mathdroid](https://covid19.mathdro.id), covid api
+4. [Fontawesome](https://fontawesome.com), free icon
