@@ -125,7 +125,7 @@ class SelectComponent extends HTMLElement {
         .arrow::before, .arrow::after {
           content: "";
           position: absolute;
-          bottom: 0px;
+          bottom: 0;
           width: 0.15rem;
           height: 100%;
           transition: all 0.5s;

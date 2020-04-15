@@ -28,7 +28,7 @@ class GlobalContainer extends HTMLElement {
     this.innerHTML = `
       <style>
         .image {
-          width: 100%; 
+          width: 100%;
           border-radius: 8px;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
@@ -36,7 +36,7 @@ class GlobalContainer extends HTMLElement {
       <div>
         <label>Cari negara</label>
         <select-component></Select-component>
-        <img class="image" src=${API.endpoint.covid.global.image} />
+        <img class="image" src=${API.endpoint.covid.global.image} alt="image covid19 global" />
       </div>
     `
   }

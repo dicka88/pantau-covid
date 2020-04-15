@@ -64,7 +64,6 @@ class HomeContainer extends HTMLElement {
           width: 450px;
           height: auto;
           position: absolute;
-          right: 4em;
           top: 0;
           right: -1em;
           transform: scaleX(-1);
