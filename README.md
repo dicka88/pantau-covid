@@ -6,7 +6,7 @@ Terkait dengan bencana alam wabah pandemik Covid-19 dan maraknya API yang berteb
 See [DEMO](https://pantaucovid.netlify.com) , we using netlify to serve static site
 
 ## Build
-You will need Node.js installed on your system.
+You will need Node.js installed on your operation system.
 
 ~~~ sh
 # install all dependencies
