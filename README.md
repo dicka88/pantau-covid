@@ -1,6 +1,6 @@
 # PANTAU COVID - Pantau penyebaran corona di indonesia
 
-Terkait dengan bencana alam wabah pandemik Covid-19 dan maraknya API yang bertebaran di internet untuk para developers, maka diputuskan kami untuk membuat web latihan untuk memantau penebaran covid-19.
+Terkait dengan bencana alam wabah pandemik Covid-19 dan maraknya API yang bertebaran di internet untuk para developers, maka diputuskan kami untuk membuat web latihan untuk memantau penyebaran covid-19.
 
 ## DEMO
 See [DEMO](https://pantaucovid.netlify.com) , we using netlify to serve static site
