@@ -22,12 +22,18 @@ class FooterComponent extends HTMLElement {
               color: black;
             }
           </style>
-          <a href="https://instagram.com/@dickaismaji" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com/dickha.itsmadjie" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://github.com/dicka88" target="_blank" class="link"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/@dickaismaji" rel="noopener norefferer" aria-label="instagram"target="_blank" class="link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/dickha.itsmadjie" rel="noopener norefferer" aria-label="facebook" target="_blank" class="link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/dicka88" rel="noopener norefferer" aria-label="github" target="_blank" class="link">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
         <div class="" style="flex: 1; display: flex; justify-content: flex-end">
-          <span><a target="_blank" href="https://linkedin.com/in/dickaismaji">Developers</a></span>
+          <span><a target="_blank" rel="noopener norefferer" aria-label="linkedin" href="https://linkedin.com/in/dickaismaji">Developers</a></span>
         </div>
       </div>
     `

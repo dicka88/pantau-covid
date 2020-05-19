@@ -50,7 +50,7 @@ class ArticleCardComponent extends HTMLElement {
         }
       </style>
       <article class="column bg-color round-7 p-1 mb-1">
-        <a target="_blank" href="https://alodokter.com/virus-corona">
+        <a target="_blank" rel="noopener norefferer" href="https://alodokter.com/virus-corona">
           <header>
             <h2>Virus Corona (COVID-19) - Gejala, penyebab dan mengobati ...</h2>
           </header>
