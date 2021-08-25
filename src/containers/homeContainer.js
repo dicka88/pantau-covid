@@ -120,19 +120,19 @@ class HomeContainer extends HTMLElement {
         <h1>Jumlah kasus di indonesia saat ini</h1>
         <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; color: white;">
           <div class="box-info">
-            <span id="confirm" style="color: #f1f107; font-size: 76px;">- - - -</span>
+            <span id="confirm" style="color: #f1f107; font-size: 56px;">- - - -</span>
             <span>Terkonfirmasi</span>
           </div>
           <div class="box-info">
-            <span id="recover" style="color: #ffb225; font-size: 76px;">- - - -</span>
+            <span id="recover" style="color: #ffb225; font-size: 56px;">- - - -</span>
             <span>Dalam perawatan</span>
           </div>
           <div class="box-info">
-            <span id="recovered" style="color: #10cc10; font-size: 76px;">- - - -</span>
+            <span id="recovered" style="color: #10cc10; font-size: 56px;">- - - -</span>
             <span>Sembuh</span>
           </div>
           <div class="box-info">
-            <span id="death" style="color: #ff2323; font-size: 76px;">- - - -</span>
+            <span id="death" style="color: #ff2323; font-size: 56px;">- - - -</span>
             <span>Meninggal</span>
           </div>
         </div>
