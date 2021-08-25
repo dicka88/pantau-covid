@@ -25,7 +25,7 @@ class FooterComponent extends HTMLElement {
           <a href="https://instagram.com/@dickaismaji" rel="noopener norefferer" aria-label="instagram"target="_blank" class="link">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://facebook.com/dickha.itsmadjie" rel="noopener norefferer" aria-label="facebook" target="_blank" class="link">
+          <a href="https://facebook.com/dicka.ismaji" rel="noopener norefferer" aria-label="facebook" target="_blank" class="link">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a href="https://github.com/dicka88" rel="noopener norefferer" aria-label="github" target="_blank" class="link">
