@@ -20,13 +20,13 @@ class WilayahContainer extends HTMLElement {
     }
   }
   renderTable(data = []) {
-    const render = data.map(({ province, active_cases, recovered, death }) => {
+    const render = data.map(({ provinsi, kasusPosi, kasusSemb, kasusMeni }) => {
       return `
         <div class="row">
-          <div>${province}</div>
-          <div>${active_cases}</div>
-          <div>${recovered}</div>
-          <div>${death}</div>
+          <div>${provinsi}</div>
+          <div>${kasusPosi}</div>
+          <div>${kasusSemb}</div>
+          <div>${kasusMeni}</div>
         </div>
       `
     }).join('')
